@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+<script>
+    const Webamp = window.Webamp, webamp = new Webamp({
+		initialTracks: [
+            { url: "https://dev.shinmai.wtf/webamp/track1.mp3", },
+            { url: "https://dev.shinmai.wtf/webamp/track2.mp3" },
+        ],
+		initialSkin: { url: './skin.wsz' },
+    });
+    webamp.renderWhenReady(document.body);
+</script>
+</body>
+</html>
